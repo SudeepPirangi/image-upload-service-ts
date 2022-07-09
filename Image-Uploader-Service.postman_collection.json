@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "d205b8c6-5133-44a2-af99-027990cbcb62",
+		"name": "Image-Uploader-Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13080301"
+	},
+	"item": [
+		{
+			"name": "Upload-Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/Sudeep/Desktop/Screenshot 2022-07-07 at 22.11.29.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4200/images",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"images"
+					],
+					"query": [
+						{
+							"key": "image",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download-Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4200/images/0cb33d2fd68b16a4ab2fcbe024f90800.png",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"images",
+						"0cb33d2fd68b16a4ab2fcbe024f90800.png"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

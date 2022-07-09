@@ -11,7 +11,7 @@ router.post("/images", upload.single("image"), (req: Request, res: Response) => 
     return res.status(200).json({
       status: "success",
       message: "Image uploaded successfully",
-      image_Id: req.file?.filename,
+      image_id: req.file?.filename,
       image_name: req.file?.originalname,
       image_mimetype: req.file?.mimetype,
     });
